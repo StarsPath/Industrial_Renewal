@@ -3,7 +3,7 @@
   "defaults": {
     "model": "industrialrenewal:catwalk_ladder_steel_base",
     "textures": {
-      "particle": "industrialrenewal:blocks/metal"
+      "particle": "industrialrenewal:block/metal"
     }
   },
   "variants": {

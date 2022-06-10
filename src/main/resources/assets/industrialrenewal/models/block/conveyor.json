@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "industrialrenewal:blocks/conveyor_belt",
-    "particle": "industrialrenewal:blocks/conveyor_belt"
+    "0": "industrialrenewal:block/conveyor_belt",
+    "particle": "industrialrenewal:block/conveyor_belt"
   },
   "elements": [
     {

@@ -1,10 +1,10 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "2": "industrialrenewal:blocks/concrete",
-    "5": "industrialrenewal:blocks/rust",
-    "6": "blocks/concrete_brown",
-    "particle": "blocks/concrete_brown"
+    "2": "industrialrenewal:block/concrete",
+    "5": "industrialrenewal:block/rust",
+    "6": "block/concrete_brown",
+    "particle": "block/concrete_brown"
   },
   "elements": [
     {

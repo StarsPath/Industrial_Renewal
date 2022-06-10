@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/iron"
+    },
+    "A": {
+      "tag": "forge:chests"
+    }
+  },
+  "result": {
+    "item": "industrialrenewal:storage_chest"
+  }
+}

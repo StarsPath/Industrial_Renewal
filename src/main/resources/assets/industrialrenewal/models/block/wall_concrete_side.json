@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench - CassioKF",
   "textures": {
-    "0": "industrialrenewal:blocks/concrete",
-    "particle": "industrialrenewal:blocks/concrete"
+    "0": "industrialrenewal:block/concrete",
+    "particle": "industrialrenewal:block/concrete"
   },
   "elements": [
     {

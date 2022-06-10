@@ -1,9 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "industrialrenewal:blocks/metal",
-    "2": "industrialrenewal:blocks/rail_loader",
-    "particle": "industrialrenewal:blocks/metal"
+    "0": "industrialrenewal:block/metal",
+    "2": "industrialrenewal:block/rail_loader",
+    "particle": "industrialrenewal:block/metal"
   },
   "elements": [
     {

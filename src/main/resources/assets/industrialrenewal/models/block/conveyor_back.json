@@ -1,12 +1,12 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "industrialrenewal:blocks/conveyor_belt",
-    "3": "blocks/anvil_base",
-    "4": "industrialrenewal:blocks/fuse_box",
-    "5": "industrialrenewal:blocks/pipe",
-    "1_0": "industrialrenewal:blocks/pipe_blue",
-    "particle": "industrialrenewal:blocks/pipe_blue"
+    "0": "industrialrenewal:block/conveyor_belt",
+    "3": "block/anvil_base",
+    "4": "industrialrenewal:block/fuse_box",
+    "5": "industrialrenewal:block/pipe",
+    "1_0": "industrialrenewal:block/pipe_blue",
+    "particle": "industrialrenewal:block/pipe_blue"
   },
   "elements": [
     {

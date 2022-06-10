@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "particle": "industrialrenewal:blocks/block_hazard"
+      "particle": "industrialrenewal:block/block_hazard"
     }
   },
   "variants": {

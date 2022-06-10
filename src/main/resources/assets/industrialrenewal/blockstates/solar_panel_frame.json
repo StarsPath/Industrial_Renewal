@@ -3,7 +3,7 @@
   "defaults": {
     "model": "industrialrenewal:solar_panel_frame",
     "textures": {
-      "particle": "industrialrenewal:blocks/solar_panels"
+      "particle": "industrialrenewal:block/solar_panels"
     }
   },
   "variants": {

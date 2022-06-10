@@ -3,7 +3,7 @@
   "defaults": {
     "model": "industrialrenewal:catwalk_stair",
     "textures": {
-      "particle": "industrialrenewal:blocks/pipe"
+      "particle": "industrialrenewal:block/pipe"
     }
   },
   "variants": {

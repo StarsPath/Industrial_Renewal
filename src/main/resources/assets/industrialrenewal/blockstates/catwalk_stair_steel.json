@@ -3,7 +3,7 @@
   "defaults": {
     "model": "industrialrenewal:catwalk_stair_steel",
     "textures": {
-      "particle": "industrialrenewal:blocks/metal"
+      "particle": "industrialrenewal:block/metal"
     }
   },
   "variants": {

@@ -3,7 +3,7 @@
   "defaults": {
     "model": "industrialrenewal:patreon/eotm_ic2exp",
     "textures": {
-      "particle": "industrialrenewal:blocks/patreon/eotm"
+      "particle": "industrialrenewal:block/patreon/eotm"
     }
   },
   "variants": {

@@ -1,8 +1,8 @@
 {
   "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
   "textures": {
-    "0": "blocks/anvil_base",
-    "1": "industrialrenewal:blocks/block_hazard"
+    "0": "industrialrenewal:block/anvil_base",
+    "1": "industrialrenewal:block/block_hazard"
   },
   "display": {
     "gui": {

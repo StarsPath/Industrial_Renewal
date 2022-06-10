@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench By CassioKF",
   "textures": {
-    "0": "industrialrenewal:blocks/fuse/fuse_plus",
-    "particle": "industrialrenewal:blocks/fuse/fuse_plus"
+    "0": "industrialrenewal:block/fuse/fuse_plus",
+    "particle": "industrialrenewal:block/fuse/fuse_plus"
   },
   "elements": [
     {
