@@ -2,17 +2,21 @@ package com.cassiokf.IndustrialRenewal.blocks;
 
 import com.cassiokf.IndustrialRenewal.References;
 import com.cassiokf.IndustrialRenewal.industrialrenewal;
-import com.cassiokf.IndustrialRenewal.item.IRBaseItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
-import net.minecraft.item.BlockItem;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.util.ActionResultType;
+import net.minecraft.util.Hand;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.world.World;
+import net.minecraftforge.common.ToolType;
 
 import java.util.function.BiFunction;
 
@@ -22,7 +26,7 @@ public class IRBaseBlock extends Block{
     protected static final VoxelShape FULL_SHAPE = Block.box(0, 0, 0, 16, 16, 16);
 
     public IRBaseBlock(Properties props) {
-        super(props);
+        super(props.strength(2).harvestTool(ToolType.PICKAXE));
     }
 
     public IRBaseBlock(String name, BiFunction<Block, Item.Properties, Item> createItemBlock){
@@ -42,6 +46,11 @@ public class IRBaseBlock extends Block{
         else{
             LOGGER.info("item is null");
         }
+    }
+
+    @Override
+    public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+        return super.use(state, worldIn, pos, player, handIn, hit);
     }
 
     public IRBaseBlock(String name, Properties props, BiFunction<Block, Item.Properties, Item> createItemBlock) {

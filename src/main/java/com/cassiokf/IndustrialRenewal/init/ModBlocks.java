@@ -1,5 +1,6 @@
 package com.cassiokf.IndustrialRenewal.init;
 
+import com.cassiokf.IndustrialRenewal.blocks.BlockScaffold;
 import com.cassiokf.IndustrialRenewal.References;
 import com.cassiokf.IndustrialRenewal.blocks.*;
 import com.cassiokf.IndustrialRenewal.blocks.pipes.BlockEnergyCable;
@@ -37,8 +38,11 @@ public class ModBlocks {
     public static final IRBaseBlock STEELBLOCK = new IRBaseBlock("block_steel", IRBlockItem::new);
     public static final IRBaseBlock CONCRETE = new IRBaseBlock("concrete", IRBlockItem::new);
 
-    public static final RegistryObject<Block> CONCRETEWALL = registerBlock("concrete_wall",
-            () -> new WallBlock(AbstractBlock.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f).noCollission()));
+//    public static final RegistryObject<Block> CONCRETEWALL = registerBlock("concrete_wall",
+//            () -> new WallBlock(AbstractBlock.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f).noCollission()));
+
+    public static final RegistryObject<IRBaseWall> CONCRETEWALL = registerBlock("concrete_wall",
+            IRBaseWall::new);
 
     public static final RegistryObject<BlockSolarPanel> SPANEL = registerBlock("solar_panel",
             BlockSolarPanel::new);
@@ -123,10 +127,16 @@ public class ModBlocks {
 
 
     public static final RegistryObject<BlockPillar> PILLAR = registerBlock("catwalk_pillar",
-            BlockPillar::new);
+            BlockPillar::new, false);
 
     public static final RegistryObject<BlockPillar> PILLAR_STEEL = registerBlock("catwalk_steel_pillar",
-            BlockPillar::new);
+            BlockPillar::new, false);
+
+    public static final RegistryObject<BlockBrace> BRACE = registerBlock("brace",
+            BlockBrace::new);
+
+    public static final RegistryObject<BlockBrace> BRACE_STEEL = registerBlock("brace_steel",
+            BlockBrace::new);
 
     public static final RegistryObject<BlockColumn> COLUMN = registerBlock("catwalk_column",
             BlockColumn::new);
@@ -135,10 +145,60 @@ public class ModBlocks {
             BlockColumn::new);
 
     public static final RegistryObject<BlockCatwalk> CATWALK = registerBlock("catwalk",
-            BlockCatwalk::new);
+            BlockCatwalk::new, false);
 
     public static final RegistryObject<BlockCatwalk> CATWALK_STEEL = registerBlock("catwalk_steel",
-            BlockCatwalk::new);
+            BlockCatwalk::new, false);
+
+    public static final RegistryObject<BlockCatwalkStair> CATWALK_STAIR = registerBlock("catwalk_stair",
+            BlockCatwalkStair::new, false);
+
+    public static final RegistryObject<BlockCatwalkStair> CATWALK_STAIR_STEEL = registerBlock("catwalk_stair_steel",
+            BlockCatwalkStair::new, false);
+
+    public static final RegistryObject<BlockHandRail> HANDRAIL = registerBlock("handrail",
+            BlockHandRail::new);
+
+    public static final RegistryObject<BlockHandRail> HANDRAIL_STEEL = registerBlock("handrail_steel",
+            BlockHandRail::new);
+
+    public static final RegistryObject<BlockCatwalkLadder> CATWALK_LADDER = registerBlock("catwalk_ladder",
+            BlockCatwalkLadder::new, false);
+
+    public static final RegistryObject<BlockCatwalkLadder> CATWALK_LADDER_STEEL = registerBlock("catwalk_ladder_steel",
+            BlockCatwalkLadder::new, false);
+
+    public static final RegistryObject<BlockFrame> FRAME = registerBlock("frame",
+            BlockFrame::new);
+
+    public static final RegistryObject<BlockPlatform> PLATFORM = registerBlock("platform",
+            BlockPlatform::new, false);
+
+    public static final RegistryObject<BlockScaffold> SCAFFOLD = registerBlock("scaffold",
+            BlockScaffold::new, false);
+
+    public static final RegistryObject<BlockCatwalkGate> CATWALK_GATE = registerBlock("catwalk_gate",
+            BlockCatwalkGate::new);
+
+    public static final RegistryObject<BlockCatwalkHatch> CATWALK_HATCH = registerBlock("catwalk_hatch",
+            BlockCatwalkHatch::new);
+
+
+    public static final RegistryObject<BlockElectricBigFenceColumn> BIG_FENCE_COLUMN = registerBlock("fence_big_column",
+            BlockElectricBigFenceColumn::new);
+
+    public static final RegistryObject<BlockElectricBigFenceWire> BIG_FENCE_WIRE = registerBlock("fence_big_wire",
+            BlockElectricBigFenceWire::new);
+
+    public static final RegistryObject<BlockElectricFence> ELECTRIC_FENCE = registerBlock("electric_fence",
+            BlockElectricFence::new);
+
+    public static final RegistryObject<BlockElectricGate> ELECTRIC_GATE = registerBlock("electric_gate",
+            BlockElectricGate::new);
+
+    public static final RegistryObject<BlockRazorWire> RAZOR_WIRE = registerBlock("razor_wire",
+            BlockRazorWire::new);
+
 
 //    public static final BlockChimney blockChimney = new BlockChimney("block_chimney", References.CREATIVE_IR_TAB);
 //    public static final BlockFirstAidKit firstAidKit = new BlockFirstAidKit("firstaid_kit", References.CREATIVE_IR_TAB);

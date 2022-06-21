@@ -33,10 +33,10 @@ public class BlockColumn extends BlockAbstractSixWayConnections {
         }
         if (neighborDirection != Direction.UP && neighborDirection != Direction.DOWN)
         {
-//            if (nb instanceof BlockBrace)
-//            {
-//                return Objects.equals(neighborState.get(BlockBrace.FACING).getName(), neighborDirection.getOpposite().getName()) || Objects.equals(neighborState.get(BlockBrace.FACING).getName(), "down_" + neighborDirection.getName());
-//            }
+            if (nb instanceof BlockBrace)
+            {
+                return Objects.equals(neighborState.getValue(BlockBrace.FACING).getName(), neighborDirection.getOpposite().getName()) || Objects.equals(neighborState.getValue(BlockBrace.FACING).getName(), "down_" + neighborDirection.getName());
+            }
             return nb instanceof BlockColumn || nb instanceof BlockPillar;
 //                    || (nb instanceof BlockHVIsolator && neighborState.get(BlockHVIsolator.FACING) == neighborDirection.getOpposite())
 //                    || nb instanceof BlockPillarEnergyCable || nb instanceof BlockPillarFluidPipe
@@ -49,10 +49,10 @@ public class BlockColumn extends BlockAbstractSixWayConnections {
 //        {
 //            return neighborState.get(BlockLight.FACING) == Direction.UP;
 //        }
-//        if (nb instanceof BlockBrace)
-//        {
-//            return Direction.Plane.HORIZONTAL.test(neighborState.get(BlockBrace.FACING).getFacing());
-//        }
+        if (nb instanceof BlockBrace)
+        {
+            return Direction.Plane.HORIZONTAL.test(neighborState.getValue(BlockBrace.FACING).getFacing());
+        }
 //        if (nb instanceof BlockFluidPipe)
 //        {
 //            return ownState.get(PIPE) > 0;

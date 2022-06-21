@@ -3,7 +3,6 @@ package com.cassiokf.IndustrialRenewal.data.client;
 import com.cassiokf.IndustrialRenewal.References;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
-import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -41,6 +40,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("locker", modLoc("block/locker"));
         withExistingParent("storage_chest", modLoc("block/storage/master_chest"));
 
+
         withExistingParent("ind_battery_bank", modLoc("block/battery/ind_battery_item"));
         withExistingParent("fluid_tank", modLoc("block/tank/tank_item"));
 
@@ -54,6 +54,33 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         withExistingParent("catwalk", modLoc("block/catwalk_inventory"));
         withExistingParent("catwalk_steel", modLoc("block/catwalk_steel_inventory"));
+
+        withExistingParent("catwalk_stair", modLoc("block/catwalk_stair_inventory"));
+        withExistingParent("catwalk_stair_steel", modLoc("block/catwalk_stair_steel_inventory"));
+
+        withExistingParent("handrail", modLoc("block/catwalk_side"));
+        withExistingParent("handrail_steel", modLoc("block/catwalk_steel_side"));
+
+        withExistingParent("catwalk_ladder", modLoc("block/catwalk_ladder_inventory"));
+        withExistingParent("catwalk_ladder_steel", modLoc("block/catwalk_ladder_steel_inventory"));
+
+        withExistingParent("frame", modLoc("block/frame_base"));
+        withExistingParent("platform", modLoc("block/platform_inventory"));
+        withExistingParent("scaffold", modLoc("block/scaffold_inventory"));
+
+        withExistingParent("catwalk_gate", modLoc("block/catwalk_gate_0"));
+        withExistingParent("catwalk_hatch", modLoc("block/catwalk_hatch_0"));
+
+        withExistingParent("brace", modLoc("block/brace"));
+        withExistingParent("brace_steel", modLoc("block/brace_steel"));
+
+        withExistingParent("fence_big_column", modLoc("block/fence_big/fence_big_core_165"));
+        withExistingParent("fence_big_wire", modLoc("block/fence_big_wire_item"));
+
+        withExistingParent("electric_fence", modLoc("block/electric_fence_inventory"));
+        withExistingParent("electric_gate", modLoc("block/electric_gate_base"));
+
+        withExistingParent("razor_wire", modLoc("block/razor_wire"));
 
     }
 }
